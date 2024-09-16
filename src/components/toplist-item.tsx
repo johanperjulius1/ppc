@@ -3,7 +3,17 @@ import classes from "./toplist-item.module.css";
 import Rating from "./rating";
 import BadgeBoard from "./badge-board";
 
-export default function ToplistItem({ casino }) {
+interface CasinoProps {
+  casino: {
+    title: string
+    logo: string
+    rating: number
+    excerpt: string
+    link: string
+  }
+}
+
+export default function ToplistItem({ casino }: CasinoProps) {
   const { title, logo, rating, excerpt, link } = casino;
   const logoPath = `/images/logos/${title}/${logo}`;
 
@@ -23,7 +33,7 @@ export default function ToplistItem({ casino }) {
 
 
         <Rating rating={rating} />
-        <BadgeBoard/>
+        <BadgeBoard />
         <div> {excerpt}</div>
       </div>
       <div

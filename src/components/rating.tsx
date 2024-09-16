@@ -1,7 +1,12 @@
 // components/Rating.js
 import Star from './star';
 
-const Rating = ({ rating }) => {
+interface RatingProps {
+  rating: number;
+}
+
+// const Rating: React.FC<RatingProps> = ({ rating }) => {
+function Rating({rating}: RatingProps){
   const totalStars = 5; // Total number of stars to display
 
   return (
