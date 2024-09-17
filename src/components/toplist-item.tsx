@@ -2,16 +2,12 @@ import Image from "next/image";
 import classes from "./toplist-item.module.css";
 import Rating from "./rating";
 import BadgeBoard from "./badge-board";
+import { Casino } from "@/types/types";
 
 interface CasinoProps {
-  casino: {
-    title: string
-    logo: string
-    rating: number
-    excerpt: string
-    link: string
-  }
+  casino: Casino
 }
+
 
 export default function ToplistItem({ casino }: CasinoProps) {
   const { title, logo, rating, excerpt, link } = casino;

@@ -2,12 +2,14 @@ import React from "react";
 import classes from "./toplist.module.css";
 import ToplistItem from "./toplist-item";
 import { getAllPostsData } from "../lib/toplist-utils";
+import { Casino } from '../types/types'
 
 export default function Toplist() {
-  const casinosData = getAllPostsData();
   const dateDay = new Date().getDate().toString()
   const dateMonth = new Date().toLocaleString('default', { month: 'long' })
   const dateYear = new Date().getFullYear()
+  
+  const casinosData: Casino[] = getAllPostsData();
   return (
     <div>
       <h1>Topp 10 bästa online casinon</h1>
