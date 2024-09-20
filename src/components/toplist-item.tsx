@@ -1,6 +1,6 @@
 import Image from "next/image";
 import classes from "./toplist-item.module.css";
-import Rating from "./rating";
+import Rating from "./feber/rating";
 import BadgeBoard from "./badge-board";
 import { Casino } from "@/types/types";
 
