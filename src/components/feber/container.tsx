@@ -1,7 +1,11 @@
+'use client'
+
 import React from 'react'
 import classes from './container.module.css'
 import BadgeBoard from '../badge-board'
 import CtaContainer from './cta-container'
+import {useState} from "react"
+
 
 export default function OperatorContainer() {
     return (
@@ -10,13 +14,12 @@ export default function OperatorContainer() {
             <div className={classes["operator-container"]}>
                 <div className={classes["logo-container"]}></div>
                 <div className={classes["badges-container"]}>
-                    <BadgeBoard/>
+                    <BadgeBoard />
                 </div>
                 <div className={classes["bonus-container"]}></div>
                 <div className={classes["perks-container"]}></div>
-                <CtaContainer rating={5} className={classes["cta-container"]}/>
-              
-  
+                <CtaContainer className={classes["cta-container"]} rating={5}/>
+                
             </div>
             <div className={classes["terms-container"]}></div>
         </main>
