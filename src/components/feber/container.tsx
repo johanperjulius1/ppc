@@ -4,8 +4,7 @@ import React from 'react'
 import classes from './container.module.css'
 import BadgeBoard from '../badge-board'
 import CtaContainer from './cta-container'
-import { useState } from "react"
-
+import PerksContainer from './perks-container'
 
 export default function OperatorContainer() {
     return (
@@ -13,12 +12,12 @@ export default function OperatorContainer() {
 
             <div className={classes["operator-container"]}>
                 <div className={classes["logo-container"]}></div>
+                <CtaContainer className={classes["cta-container"]} rating={5} />
                 <div className={classes["badges-container"]}>
                     <BadgeBoard />
                 </div>
                 <div className={classes["bonus-container"]}></div>
-                <div className={classes["perks-container"]}></div>
-                <CtaContainer className={classes["cta-container"]} rating={5} />
+                <PerksContainer className={classes["perks-container"]}></PerksContainer>
 
             </div>
             <div className={classes["terms-container"]}></div>

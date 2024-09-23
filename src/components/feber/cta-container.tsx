@@ -11,8 +11,8 @@ interface RatingProps {
 export default function CtaContainer ({rating, className}: RatingProps) {
     return (
         <div className={className}>
-            <a href="">Hello</a>
             <Rating rating={rating}  />
+            <a href="">Hello</a>
         </div>
     )
 }
