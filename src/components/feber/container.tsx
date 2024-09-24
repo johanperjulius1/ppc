@@ -5,6 +5,7 @@ import classes from './container.module.css'
 import BadgeBoard from '../badge-board'
 import CtaContainer from './cta-container'
 import PerksContainer from './perks-container'
+import Rating from './rating'
 
 export default function OperatorContainer() {
     return (
@@ -12,11 +13,14 @@ export default function OperatorContainer() {
 
             <div className={classes["operator-container"]}>
                 <div className={classes["logo-container"]}></div>
-                <CtaContainer className={classes["cta-container"]} rating={5} />
-                <div className={classes["badges-container"]}>
-                    <BadgeBoard />
-                </div>
                 <div className={classes["bonus-container"]}></div>
+                <div className= {classes["rating-container"]}>
+                    <Rating rating={5}></Rating>
+                </div>
+                <div className={classes["badges-container"]}>
+                    <BadgeBoard/>
+                </div>
+                <CtaContainer className={classes["cta-container"]}  />
                 <PerksContainer className={classes["perks-container"]}></PerksContainer>
 
             </div>

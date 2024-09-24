@@ -1,10 +1,11 @@
 .badge-container {
+    align-items: center;
     background-color: #f5f4f4;
     display: flex;
     height: 40px;
     justify-content: space-around;
-    align-items: center;
     min-width: 180px;
+    width: 100%;
 }
 .badge-container div {
     display: flex;

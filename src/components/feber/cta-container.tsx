@@ -1,17 +1,14 @@
 import React from "react"
-import Rating from "./rating"
 import classes from "./cta-container.module.css"
 
 
-interface RatingProps {
-    rating: number
+interface CtaProps {
     className?: string
   }
 
-export default function CtaContainer ({rating, className}: RatingProps) {
+export default function CtaContainer ({rating, className}: CtaProps) {
     return (
         <div className={className}>
-            <Rating rating={rating}  />
             <a href="">Hello</a>
         </div>
     )

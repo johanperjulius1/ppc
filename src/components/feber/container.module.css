@@ -4,9 +4,14 @@
   border-radius: 10px;
   border: 2px solid rgba(217, 217, 217, 1);
   display: grid;
-  grid-template-areas: "LOGO BONUS" "LOGO BADGES" "LOGO CTA" "PERKS PERKS";
+  grid-template-areas:
+    "LOGO BONUS"
+    "LOGO RATING"
+    "LOGO BADGES"
+    "LOGO CTA"
+    "PERKS PERKS";
   grid-template-columns: 125px 1fr;
-  grid-template-rows: 0fr 55px 0fr 1fr;
+  grid-template-rows: auto 0fr 55px 0fr 1fr;
   overflow: hidden;
   position: relative;
 }
@@ -58,6 +63,7 @@
   justify-self: center;
   padding: 5px;
   width: 100%;
+  text-align: center;
 }
 
 .cta-container {
@@ -88,4 +94,10 @@
   font-size: 12px;
   font-weight: 300;
   text-align: center;
+}
+
+.rating-container {
+  display: flex;
+  grid-area: RATING;
+  justify-content: center;
 }

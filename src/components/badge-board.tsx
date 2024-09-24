@@ -1,5 +1,7 @@
 import classes from "./badge-board.module.css"
 import Image from "next/image"
+import Rating from "./feber/rating"
+
 
 export default function BadgeBoard() {
     return (
