@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classes from "./toplist.module.css";
 import ToplistItem from "./toplist-item";
-import Container from "./feber/operator-container"
+import OperatorContainer from "./feber/operator-container"
 import { getAllPostsData } from "../lib/toplist-utils";
 import { Casino } from '../types/types'
 
@@ -19,8 +19,10 @@ export default function Toplist() {
       {/* {casinosData.map((casino) => (
         <ToplistItem key={casino.title} casino={casino} />
       ))} */}
-      <Container />
 
+      {casinosData.map((casino) => (
+        <OperatorContainer key={casino.title} casino={casino} />
+      ))}
 
     </div>
   );

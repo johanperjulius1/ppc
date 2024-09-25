@@ -15,7 +15,6 @@ interface CasinoProps {
 
 export default function OperatorContainer({ casino }: CasinoProps) {
 
-
     const { title, logo, rating, excerpt, link } = casino;
     const logoPath = `/images/logos/${title}/${logo}`;
   
