@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classes from "./toplist.module.css";
 import ToplistItem from "./toplist-item";
-import Container from "./feber/container"
+import Container from "./feber/operator-container"
 import { getAllPostsData } from "../lib/toplist-utils";
 import { Casino } from '../types/types'
 

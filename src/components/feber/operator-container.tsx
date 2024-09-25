@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import classes from './container.module.css'
+import classes from './operator-container.module.css'
 import BadgeBoard from '../badge-board'
 import CtaContainer from './cta-container'
 import PerksContainer from './perks-container'

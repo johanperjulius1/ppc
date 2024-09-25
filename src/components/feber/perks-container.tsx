@@ -6,12 +6,12 @@ export default function PerksContainer ({className}:PerksProps) {
 
     return (
         <div className={className}>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
+            <div>OMS.KRAB PÅ INSÄTTNING</div>
+            <div>UTTAGSFÖRSÖK 1</div>
+            <div>UTTAGSFÖRSÖK 2</div>
+            <div>HITTA STARBURST</div>
+            <div>GENOMSNITTLIG SVARSTID</div>
+            <div>RANK PÅ ANDRA SIDOR</div>
         </div>
     )
 }
