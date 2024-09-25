@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 import classes from './operator-container.module.css'
 import BadgeBoard from '../badge-board'
@@ -8,7 +6,19 @@ import PerksContainer from './perks-container'
 import Rating from './rating'
 import BonusContainer from './bonus-container'
 
-export default function OperatorContainer() {
+import { Casino } from "@/types/types";
+
+interface CasinoProps {
+  casino: Casino
+}
+
+
+export default function OperatorContainer({ casino }: CasinoProps) {
+
+
+    const { title, logo, rating, excerpt, link } = casino;
+    const logoPath = `/images/logos/${title}/${logo}`;
+  
     return (
         <main>
 
