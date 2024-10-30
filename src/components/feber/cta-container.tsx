@@ -9,7 +9,7 @@ interface CtaProps {
 export default function CtaContainer({ className }: CtaProps) {
     return (
         <div className={className}>
-            <a href="">Hello</a>
+            <a href="">Spela nu</a>
         </div>
     )
 }
