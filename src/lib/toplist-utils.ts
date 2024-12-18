@@ -29,12 +29,12 @@ export function getAllPostsData(): Casino[] {
         turnoverBonus: data.turnoverBonus,
         turnoverFreespin: data.turnoverFreespin,
         perks: {
-          perk1: data.perk1 || "",
-          perk2: data.perk2 || "",
-          perk3: data.perk3 || "",
-          perk4: data.perk4 || "",
-          perk5: data.perk5 || "",
-          perk6: data.perk6 || "",
+          perk1: data.perks?.perk1 || "",
+          perk2: data.perks?.perk2 || "",
+          perk3: data.perks?.perk3 || "",
+          perk4: data.perks?.perk4 || "",
+          perk5: data.perks?.perk5 || "",
+          perk6: data.perks?.perk6 || "",
         }
       } as Casino;
   });

@@ -1,44 +1,37 @@
 interface PerksProps {
     className?: string
     perks: {
-        perks1?: string | number
-        perks2?: string | number
-        perks3?: string | number
-        perks4?: string | number
-        perks5?: string | number
-        perks6?: string | number
+        perk1?: string | number
+        perk2?: string | number
+        perk3?: string | number
+        perk4?: string | number
+        perk5?: string | number
+        perk6?: string | number
     }
 }
 
 export default function PerksContainer({ className, perks }: PerksProps) {
-    const { perks1, perks2, perks3, perks4, perks5, perks6 } = perks
-    console.log("hello from perks 1",perks1)
+    const { perk1, perk2, perk3, perk4, perk5, perk6 } = perks
 
     return (
         <div className={className}>
             <div>
-                <span>OMS.KRAB PÅ INSÄTTNING</span>
-                <span>hello {perks1}</span>
+                <span>{perk1}</span>
             </div>
             <div>
-                <span>OMS.KRAB PÅ INSÄTTNING</span>
-                <span>35x</span>
+                <span>{perk2}</span>
             </div>
             <div>
-                <span>OMS.KRAB PÅ INSÄTTNING</span>
-                <span>35x</span>
+                <span>{perk3}</span>
             </div>
             <div>
-                <span>OMS.KRAB PÅ INSÄTTNING</span>
-                <span>35x</span>
+                <span>{perk4}</span>
             </div>
             <div>
-                <span>OMS.KRAB PÅ INSÄTTNING</span>
-                <span>35x</span>
+                <span>{perk5}</span>
             </div>
             <div>
-                <span>OMS.KRAB PÅ INSÄTTNING</span>
-                <span>35x</span>
+                <span>{perk6}</span>
             </div>
         </div>
     )

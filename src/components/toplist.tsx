@@ -9,8 +9,8 @@ export default function Toplist() {
   const dateDay = new Date().getDate().toString()
   const dateMonth = new Date().toLocaleString('default', { month: 'long' })
   const dateYear = new Date().getFullYear()
-
-
+  
+  
   const casinosData: Casino[] = getAllPostsData();
   return (
     <div>
