@@ -10,8 +10,7 @@ interface CasinoProps {
 
 
 export default function ToplistItem({ casino }: CasinoProps) {
-  const { title, logo, rating, excerpt, link } = casino;
-  const logoPath = `/images/logos/${title}/${logo}`;
+  const { title, logoObject, rating, excerpt, link } = casino;
 
   return (
     <div className={`${classes["toplist-item"]}`}>

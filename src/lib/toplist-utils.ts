@@ -20,7 +20,12 @@ export function getAllPostsData(): Casino[] {
 
       return {
         title: data.title,
-        logo: data.logo,
+        logoObject: {
+          logoTitle: data.logoObject.logoTitle,
+          logoName: data.logoObject.logoName,
+          backgroundColor: data.logoObject.backgroundColor,
+          altText: data.logoObject.altText
+        },
         rating: data.rating,
         excerpt: data.excerpt,
         link: data.link,

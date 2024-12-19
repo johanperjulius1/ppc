@@ -7,6 +7,7 @@ import Rating from './rating'
 import BonusContainer from './bonus-container'
 
 import { Casino } from "@/types/types";
+import LogoContainer from './logo-container'
 
 interface CasinoProps {
     casino: Casino
@@ -15,14 +16,13 @@ interface CasinoProps {
 
 export default function OperatorContainer({ casino }: CasinoProps) {
 
-    const { title, logo, rating, excerpt, link, positive1, positive2, turnoverBonus, turnoverFreespin, perks } = casino;
-    const logoPath = `/images/logos/${title}/${logo}`;
+    const { title, logoObject, rating, excerpt, link, positive1, positive2, turnoverBonus, turnoverFreespin, perks } = casino;
 
     return (
         <main>
 
             <div className={classes["operator-container"]}>
-                <div className={classes["logo-container"]}></div>
+                <div className={classes["logo-container"]}><LogoContainer logoObject={logoObject}/></div>
                 <div className={classes["bonus-container"]}>
                     <BonusContainer turnoverBonus={turnoverBonus} turnoverFreespin={turnoverFreespin} positive1={positive1} positive2={positive2} />
                 </div>

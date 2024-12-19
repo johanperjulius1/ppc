@@ -1,6 +1,11 @@
 export interface Casino {
   title: string;
-  logo: string;
+  logoObject: {
+    logoTitle: string
+    logoName: string
+    backgroundColor: string
+    altText: string
+  };
   rating: number;
   excerpt: string;
   link: string;

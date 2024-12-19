@@ -1,6 +1,10 @@
 ---
 title: "Casinostugan"
-logo: "casinostugan-mobile.webp"
+logoObject:
+  logoTitle: "Casinostugan"
+  logoName: "Casinostugan-desktop.jpeg"
+  backgroundColor: "blue"
+  altText: Casinostugans logga
 rating: 4
 excerpt: "Bonus Upp till 1000 kr + 100 Gratissnurr + 100 kr i Live Casino"
 link: "https://www.casinostugan.se"
