@@ -1,7 +1,7 @@
 .operator-container {
   background-color: #fff;
   border-radius: 10px;
-  border: 2px solid rgba(217, 217, 217, 1);
+  border: 2px solid;
   display: grid;
   grid-template-areas:
     "LOGO BONUS"
@@ -11,6 +11,7 @@
     "PERKS PERKS";
   grid-template-columns: 125px 1fr;
   grid-template-rows: auto 0fr 55px 0fr 1fr;
+  margin-bottom: 5px;
   overflow: hidden;
   position: relative;
 }
@@ -76,7 +77,7 @@
 }
 
 .cta-container a {
-  background-color: #65c82d;
+  background-color: #57ea03;
   border-radius: 5px;
   color: #fff;
   display: block;

@@ -3,7 +3,7 @@ title: "Casinostugan"
 logoObject:
   logoTitle: "Casinostugan"
   logoName: "Casinostugan-desktop.jpeg"
-  backgroundColor: "blue"
+  backgroundColor: "red"
   altText: Casinostugans logga
 rating: 4
 excerpt: "Bonus Upp till 1000 kr + 100 Gratissnurr + 100 kr i Live Casino"
