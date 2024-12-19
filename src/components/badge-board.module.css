@@ -1,4 +1,18 @@
-.badge-container {
+.badges-container {
+    background-color: #efefef;
+    border-radius: var(--bd-rad-sm);
+    display: flex;
+    font-size: 12px;
+    font-weight: 300;
+    gap: 7px;
+    grid-area: BADGES;
+    height: 55px;
+    justify-content: space-evenly;
+    margin: 0 5px;
+    padding: 6px;
+  }
+
+/* .badge-container {
     align-items: center;
     background-color: #f5f4f4;
     display: flex;
@@ -6,19 +20,19 @@
     justify-content: space-around;
     min-width: 180px;
     width: 100%;
-}
-.badge-container div {
+} */
+.badges-container div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.badge-container div img {
+.badges-container div img {
     display: block;
     margin-left: 12px
 }
 
-.badge-container div span {
+.badges-container div span {
     display: block;
     font-size: 12px;
 }

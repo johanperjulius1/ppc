@@ -31,9 +31,7 @@ export default function OperatorContainer({ casino }: CasinoProps) {
                 <div className={classes["rating-container"]}>
                     <Rating rating={5}></Rating>
                 </div>
-                <div className={classes["badges-container"]}>
-                    <BadgeBoard />
-                </div>
+                <BadgeBoard className={classes["badges-container"]}/>
                 <CtaContainer className={classes["cta-container"]} />
                 <PerksContainer className={classes["perks-container"]} perks={perks}></PerksContainer>
 

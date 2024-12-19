@@ -42,7 +42,7 @@
   width: 100%;
 }
 
-.badges-container {
+/* .badges-container {
   background-color: #efefef;
   border-radius: var(--bd-rad-sm);
   display: flex;
@@ -54,7 +54,7 @@
   justify-content: space-evenly;
   margin: 0 5px;
   padding: 6px;
-}
+} */
 
 .bonus-container {
   display: flex;

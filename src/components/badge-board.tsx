@@ -2,10 +2,14 @@ import classes from "./badge-board.module.css"
 import Image from "next/image"
 import Rating from "./feber/rating"
 
+interface BadgeBoardProps {
+    className: string
+}
 
-export default function BadgeBoard() {
+
+export default function BadgeBoard({ className }: BadgeBoardProps) {
     return (
-        <div className={classes["badge-container"]}>
+        <div className={`${classes["badges-container"]} ${className}`}>
             <div>
                 <Image alt="Trustly" width={13} height={13} src="/images/badges/trustly.avif" />
                 <span>Trustly</span>
