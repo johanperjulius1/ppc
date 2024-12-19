@@ -15,7 +15,7 @@
   overflow: hidden;
   position: relative;
   
-  @media (min-width: 1000px){
+  @media (min-width: 992px){
     height: 190px;
     grid-auto-flow: column;
     /* grid-template-columns: 165px 55px 1.2fr 1.7fr 1fr; */

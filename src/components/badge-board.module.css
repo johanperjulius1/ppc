@@ -10,6 +10,11 @@
     justify-content: space-evenly;
     margin: 0 5px;
     padding: 6px;
+    @media (min-width: 992px){
+        flex-direction: column;
+        height: 100%;
+        max-width:55px;
+    }
   }
 
 /* .badge-container {
