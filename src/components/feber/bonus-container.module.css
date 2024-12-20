@@ -27,9 +27,14 @@
 }
 
 .bonus-turnover {
+    display: flex;
     font-size: 13px;
+    margin-bottom: 4px;
+    align-items: center;
 }
 
 .freespins-turnover {
+    display: flex;
     font-size: 13px;
+    align-items: center;
 }

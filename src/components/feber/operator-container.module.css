@@ -91,19 +91,7 @@
   margin: 5px 5px 0;
 }
 
-.cta-container a {
-  background-color: #57ea03;
-  border-radius: 5px;
-  color: #fff;
-  display: block;
-  font-weight: bold;
-  padding: 10px;
-  padding: 25px 20px;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-  width: 100%;
-}
+
 
 .terms-container {
   font-size: 12px;
