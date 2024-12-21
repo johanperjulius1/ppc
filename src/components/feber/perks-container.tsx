@@ -1,3 +1,5 @@
+import classes from "@/components/feber/perks-container.module.css"
+
 interface PerksProps {
     className?: string
     perks: {
@@ -15,22 +17,22 @@ export default function PerksContainer({ className, perks }: PerksProps) {
 
     return (
         <div className={className}>
-            <div>
+            <div className={classes["perks-item"]}>
                 <span>{perk1}</span>
             </div>
-            <div>
+            <div className={classes["perks-item"]}>
                 <span>{perk2}</span>
             </div>
-            <div>
+            <div className={classes["perks-item"]}>
                 <span>{perk3}</span>
             </div>
-            <div>
+            <div className={classes["perks-item"]}>
                 <span>{perk4}</span>
             </div>
-            <div>
+            <div className={classes["perks-item"]}>
                 <span>{perk5}</span>
             </div>
-            <div>
+            <div className={classes["perks-item"]}>
                 <span>{perk6}</span>
             </div>
         </div>
