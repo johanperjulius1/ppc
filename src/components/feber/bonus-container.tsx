@@ -1,17 +1,17 @@
 import classes from "./bonus-container.module.css"
 
 interface BonusProps {
-    className?: string
+    title: string
     positive1: string
     positive2: string
     turnoverBonus: number
     turnoverFreespin: number,
 }
 
-export default function BonusContainer({ className, positive1, positive2, turnoverBonus, turnoverFreespin }: BonusProps) {
+export default function BonusContainer({ title, positive1, positive2, turnoverBonus, turnoverFreespin }: BonusProps) {
     return (
         <>
-            <h3 className={classes.h3}>LeoVegas</h3>
+            <h3 className={classes.h3}>{title}</h3>
             <div className={classes.bonus}>{positive1}</div>
             <div className={classes.freespins}>{positive2}</div>
             <div className={classes["bonus-wagering"]}>

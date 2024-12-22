@@ -26,7 +26,7 @@ export default function OperatorContainer({ casino }: CasinoProps) {
             >
                 <div className={classes["logo-container"]}  style={{ backgroundColor: logoObject.backgroundColor}} ><LogoContainer logoObject={logoObject}/></div>
                 <div className={classes["bonus-container"]}>
-                    <BonusContainer turnoverBonus={turnoverBonus} turnoverFreespin={turnoverFreespin} positive1={positive1} positive2={positive2} />
+                    <BonusContainer title={title} turnoverBonus={turnoverBonus} turnoverFreespin={turnoverFreespin} positive1={positive1} positive2={positive2} />
                 </div>
                 <div className={classes["rating-container"]}>
                     <Rating rating={5}></Rating>

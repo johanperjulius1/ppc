@@ -8,9 +8,9 @@ logoObject:
 rating: 4
 excerpt: "Bonus Upp till 1000 kr + 100 Gratissnurr + 100 kr i Live Casino"
 link: "https://www.casinostugan.se"
-turnoverBonus: 35
-turnoverFreespin: 10
-positive1: "Bonus: 2500"
+turnoverBonus: 15
+turnoverFreespin: "N/A"
+positive1: "Bonus: 1000"
 positive2: "300 free spin"
 perks:
   perk1: "Free drinks"

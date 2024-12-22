@@ -11,8 +11,8 @@ export interface Casino {
   link: string;
   positive1: string
   positive2: string
-  turnoverBonus: number;
-  turnoverFreespin: number;
+  turnoverBonus: number | string;
+  turnoverFreespin: number | string;
   perks: {
     perk1?: string | number
     perk2?: string | number
