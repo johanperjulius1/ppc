@@ -51,7 +51,7 @@
 .pale::after {
     content: "X";
     color: red;
-    font-size: 18px;
+    font-size: 20px;
     position: absolute;
     top: 13px;
     right: 19px;
