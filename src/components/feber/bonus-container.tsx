@@ -4,8 +4,8 @@ interface BonusProps {
     title: string
     positive1: string
     positive2: string
-    turnoverBonus: number
-    turnoverFreespin: number,
+    turnoverBonus: number | string
+    turnoverFreespin: number | string
 }
 
 export default function BonusContainer({ title, positive1, positive2, turnoverBonus, turnoverFreespin }: BonusProps) {

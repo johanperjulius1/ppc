@@ -9,17 +9,17 @@ export interface Casino {
   rating: number;
   excerpt: string;
   link: string;
-  positive1: string
-  positive2: string
+  positive1: string;
+  positive2: string;
   turnoverBonus: number | string;
   turnoverFreespin: number | string;
   perks: {
-    perk1?: string | number
-    perk2?: string | number
-    perk3?: string | number
-    perk4?: string | number
-    perk5?: string | number
-    perk6?: string | number
+    perk1?: number | string
+    perk2?: number | string
+    perk3?: number | string
+    perk4?: number | string
+    perk5?: number | string
+    perk6?: number | string
   },
   badges: {
     trustly: boolean
