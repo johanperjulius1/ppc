@@ -20,5 +20,11 @@ export interface Casino {
     perk4?: string | number
     perk5?: string | number
     perk6?: string | number
+  },
+  badges: {
+    trustly: boolean
+    swish: boolean
+    bankId: boolean
+    license: boolean
   }
 }

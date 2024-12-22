@@ -4,10 +4,16 @@ import Rating from "./feber/rating"
 
 interface BadgeBoardProps {
     className: string
+    badges: {
+        trustly: boolean
+        swish: boolean
+        bankId: boolean
+        license: boolean
+    }
 }
 
 
-export default function BadgeBoard({ className }: BadgeBoardProps) {
+export default function BadgeBoard({ className, badges }: BadgeBoardProps) {
     return (
         <div className={`${classes["badges-container"]} ${className}`}>
             <div>

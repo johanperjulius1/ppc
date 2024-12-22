@@ -16,7 +16,7 @@ export default function LogoContainer({ logoObject }: LogoProps) {
     const logoPath = `/images/logos/${logoTitle}/${logoName}`;
     return (
         <div style={{ backgroundColor }}>
-            <Image width={100} height={125} src={logoPath} alt={altText} />
+            <Image width={100} height={80} src={logoPath} alt={altText} />
         </div>
     );
 }

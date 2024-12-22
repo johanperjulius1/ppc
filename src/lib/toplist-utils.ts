@@ -40,6 +40,12 @@ export function getAllPostsData(): Casino[] {
           perk4: data.perks?.perk4 || "",
           perk5: data.perks?.perk5 || "",
           perk6: data.perks?.perk6 || "",
+        },
+        badges: {
+          trustly: data.badges.trustly,
+          swish: data.badges.swish,
+          bankId: data.badges.bankId,
+          license: data.badges.license
         }
       } as Casino;
   });
