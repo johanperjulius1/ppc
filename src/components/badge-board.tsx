@@ -16,20 +16,20 @@ interface BadgeBoardProps {
 export default function BadgeBoard({ className, badges }: BadgeBoardProps) {
     return (
         <div className={`${classes["badges-container"]} ${className}`}>
-            <div>
+            <div className={!badges.trustly ? classes["pale"] : ""}>
                 <Image alt="Trustly" width={13} height={13} src="/images/badges/trustly.avif" />
                 <span>Trustly</span>
             </div>
-            <div>
-                <Image alt="swish" width={13} height={13} src="/images/badges/swish.avif"/>
-                <span> Swish</span>
+            <div className={!badges.swish ? classes["pale"] : ""}>
+                <Image alt="Swish" width={13} height={13} src="/images/badges/swish.avif"/>
+                <span>Swish</span>
             </div>
-            <div>
+            <div className={!badges.bankId ? classes["pale"] : ""}>
                 <Image alt="BankID" width={13} height={13} src="/images/badges/bankid.avif"/>
                 <span>BankID</span>
             </div>
-            <div>
-                <Image alt="Spelinspektionen" width={13} height={13} src="/images/badges/spelinspektionen.avif"/>
+            <div className={!badges.license ? classes["pale"] : ""}>
+                <Image alt="Licens" width={13} height={13} src="/images/badges/spelinspektionen.avif"/>
                 <span>Licens</span>
             </div>
         </div>

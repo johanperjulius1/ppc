@@ -19,8 +19,9 @@ perks:
   perk4: "Priority support"
   perk5: "Cashback offers"
   perk6: "Loyalty points"
-trustly: true
-swish: true
-bankId: false
-license: false
+badges:
+  trustly: true
+  swish: true
+  bankId: false
+  license: false
 ---
