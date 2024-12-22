@@ -29,7 +29,7 @@ export default function OperatorContainer({ casino }: CasinoProps) {
                     <BonusContainer title={title} turnoverBonus={turnoverBonus} turnoverFreespin={turnoverFreespin} positive1={positive1} positive2={positive2} />
                 </div>
                 <div className={classes["rating-container"]}>
-                    <Rating rating={5}></Rating>
+                    <Rating rating={rating}></Rating>
                 </div>
                 <BadgeBoard className={classes["badges-container"]} badges={badges}/>
                 <CtaContainer className={classes["cta-container"]} />

@@ -5,7 +5,7 @@ logoObject:
   logoName: "Casinostugan-desktop.jpeg"
   backgroundColor: "red"
   altText: Casinostugans logga
-rating: 4
+rating: 3.5
 excerpt: "Bonus Upp till 1000 kr + 100 Gratissnurr + 100 kr i Live Casino"
 link: "https://www.casinostugan.se"
 turnoverBonus: 15
