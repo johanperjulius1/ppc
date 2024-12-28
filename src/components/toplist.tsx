@@ -13,7 +13,7 @@ export default function Toplist() {
   const casinosData: Casino[] = getAllPostsData();
   return (
     <div className={classes.wrapper}>
-      <h1>Topp 10 bästa online casinon</h1>
+      <h1 className={classes.headline}>Topp 10 bästa online casinon</h1>
       <h2 className={classes.subtitle}>Bonusarna uppdaterades den {dateDay} {dateMonth} {dateYear} </h2>
       {casinosData.map((casino) => (
         <OperatorContainer key={casino.title} casino={casino} />
