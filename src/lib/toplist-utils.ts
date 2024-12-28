@@ -47,7 +47,7 @@ export function getAllPostsData(): Casino[] {
           license: data.badges.license
         },
         affiliateLink: data.affiliateLink,
-        termsLink: data.termsLink
+        reviewLink: data.reviewLink
       } as Casino;
   });
   

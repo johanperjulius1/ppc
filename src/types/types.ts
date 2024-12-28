@@ -27,6 +27,6 @@ export interface Casino {
     license: boolean
   }
   affiliateLink: string
-  termsLink: string
+  reviewLink: string
 }
 

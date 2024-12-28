@@ -24,5 +24,5 @@ badges:
   bankId: true
   license: true
 affiliateLink: "https://casinostugan.se"
-termsLink: "https://casinostugan.se"
+reviewLink: "/casinostugan"
 ---

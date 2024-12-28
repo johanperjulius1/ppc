@@ -24,5 +24,5 @@ badges:
   bankId: false
   license: false
 affiliateLink: "https://leovegas.se"
-termsLink: "https://leovagas.se"
+reviewLink: "/leovegas"
 ---
