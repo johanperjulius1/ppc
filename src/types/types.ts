@@ -8,7 +8,6 @@ export interface Casino {
   };
   rating: number;
   excerpt: string;
-  link: string;
   positive1: string;
   positive2: string;
   turnoverBonus: number | string;
@@ -27,5 +26,7 @@ export interface Casino {
     bankId: boolean
     license: boolean
   }
+  affiliateLink: string
+  termsLink: string
 }
 

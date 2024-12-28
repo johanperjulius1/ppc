@@ -28,7 +28,6 @@ export function getAllPostsData(): Casino[] {
         },
         rating: data.rating,
         excerpt: data.excerpt,
-        link: data.link,
         positive1: data.positive1,
         positive2: data.positive2,
         turnoverBonus: data.turnoverBonus,
@@ -46,7 +45,9 @@ export function getAllPostsData(): Casino[] {
           swish: data.badges.swish,
           bankId: data.badges.bankId,
           license: data.badges.license
-        }
+        },
+        affiliateLink: data.affiliateLink,
+        termsLink: data.termsLink
       } as Casino;
   });
   

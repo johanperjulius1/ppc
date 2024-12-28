@@ -7,7 +7,6 @@ logoObject:
   altText: Casinostugans logga
 rating: 3.5
 excerpt: "Bonus Upp till 1000 kr + 100 Gratissnurr + 100 kr i Live Casino"
-link: "https://www.casinostugan.se"
 turnoverBonus: 15
 turnoverFreespin: "N/A"
 positive1: "Bonus: 1000"
@@ -24,4 +23,6 @@ badges:
   swish: true
   bankId: true
   license: true
+affiliateLink: "https://casinostugan.se"
+termsLink: "https://casinostugan.se"
 ---

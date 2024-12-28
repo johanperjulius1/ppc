@@ -7,7 +7,6 @@ logoObject:
   altText: "Leovegas casino"
 rating: 5
 excerpt: "100% bonus upp till 4000 kr + 100 free spins"
-link: "https://www.leovegas.com"
 turnoverBonus: 35
 turnoverFreespin: 10
 positive1: "Bonus: 2500"
@@ -24,4 +23,6 @@ badges:
   swish: true
   bankId: false
   license: false
+affiliateLink: "https://leovegas.se"
+termsLink: "https://leovagas.se"
 ---
