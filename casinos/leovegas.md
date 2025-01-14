@@ -12,12 +12,12 @@ turnoverFreespin: 10
 positive1: "Bonus: 2500"
 positive2: "300 free spin"
 perks:
-  perk1: "Free drinks"
-  perk2: "VIP lounge access"
-  perk3: "Exclusive bonuses"
+  perk1: "Vip program"
+  perk2: "Unlimitied credits"
+  perk3: "VIP events"
   perk4: "Priority support"
-  perk5: "Cashback offers"
-  perk6: "Loyalty points"
+  perk5: "Free casj"
+  perk6: "Unlimited withdrawals"
 badges:
   trustly: true
   swish: true
