@@ -9,17 +9,20 @@ function Menu () {
   };
   return (
     <nav className={styles.navbar}>
-      <div className={styles.menuIcon} onClick={toggleMenu}>
-        {isOpen ? '✖' : '☰'}
+      <div className={styles['navbar-inner']}>
+        <div className={styles.menuIcon} onClick={toggleMenu}>
+          {isOpen ? '✖' : '☰'}
+        </div>
+        <div className={styles.logo}>CASINOSISTERS</div>
+        <ul className={`${styles.menuList} ${isOpen ? styles.showMenu : ''}`}>
+          <li>Casinon</li>
+          <li>Nya Casinon</li>
+          <li>Casino Bonus</li>
+          <li>Free Spins</li>
+          <li>CasinoTempen 2024</li>
+          <li>CasinoTempen 2024</li>
+        </ul>
       </div>
-      <div className={styles.logo}>CASINOSISTERS</div>
-      <ul className={`${styles.menuList} ${isOpen ? styles.showMenu : ''}`}>
-        <li>Casinon</li>
-        <li>Nya Casinon</li>
-        <li>Casino Bonus</li>
-        <li>Free Spins</li>
-        <li>CasinoTempen 2024</li>
-      </ul>
     </nav>
   );
 };
