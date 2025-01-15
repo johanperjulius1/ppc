@@ -1,7 +1,8 @@
 "use client"
 import React, { useState } from 'react';
 import styles from './menu.module.css';
-const Menu = () => {
+
+function Menu () {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
