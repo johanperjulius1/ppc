@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Menu from "@/components/menu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className} style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+        <Menu />
         <main style={{ flex: "1" }}>{children}</main>
         <Footer />
       </body>
