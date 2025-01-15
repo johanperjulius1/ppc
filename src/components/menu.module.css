@@ -14,7 +14,7 @@
   }
   .navbar-inner {
     align-items: center;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between; /* Adjust to space items evenly */
     margin: 0 auto;
     max-width: 1140px; /* Match the operator container width */
@@ -61,6 +61,7 @@
       display: block;
     }
     .navbar-inner {
+      display: flex;
       justify-content: flex-start;
     }
     .showMenu {
@@ -73,5 +74,6 @@
     }
     .menuList {
       justify-content: flex-start;
+      padding-inline-start: 0;
     }
   } 
