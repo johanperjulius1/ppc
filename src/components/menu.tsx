@@ -20,7 +20,6 @@ function Menu () {
           <li><Link href="/nya-casinon">Nya Casinon</Link></li>
           <li><Link href="/casino-bonus">Casino Bonus</Link></li>
           <li><Link href="/free-spins">Free Spins</Link></li>
-          <li>CasinoTempen 2024</li>
         </ul>
       </div>
     </nav>
