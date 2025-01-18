@@ -51,8 +51,6 @@ export function getAllPostsData(): Casino[] {
       } as Casino;
   });
   
-console.log("casino")
-
   allPostsData.sort((a, b) => {
     return b.rating - a.rating
   })
