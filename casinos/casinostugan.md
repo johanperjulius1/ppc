@@ -26,3 +26,20 @@ badges:
 affiliateLink: "https://casinostugan.se"
 reviewLink: "/casinostugan"
 ---
+# Welcome to Casinostugan
+
+Casinostugan offers a unique and exciting gaming experience with a variety of games and bonuses. Whether you're a seasoned player or new to online casinos, you'll find something to enjoy here.
+
+## Bonuses and Promotions
+
+- **Welcome Bonus**: Get up to 1000 kr plus 100 free spins.
+- **Live Casino Bonus**: Enjoy an additional 100 kr in the live casino.
+
+## Why Choose Casinostugan?
+
+- **Trustworthy**: Licensed and secure with Trustly, Swish, and BankID.
+- **Exclusive Perks**: Enjoy free drinks, VIP lounge access, and more.
+
+## Join Us Today!
+
+Visit [Casinostugan](https://casinostugan.se) to start your gaming adventure today!

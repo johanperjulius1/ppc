@@ -16,7 +16,7 @@ export function getAllPostsData(): Casino[] {
   const allPostsData = postFiles.map((postFile) => {
       const filePath = path.join(postsDirectory, postFile);
       const fileContent = fs.readFileSync(filePath, "utf-8");
-      const { data } = matter(fileContent);
+      const { data, content } = matter(fileContent);
 
       return {
         title: data.title,
@@ -47,7 +47,8 @@ export function getAllPostsData(): Casino[] {
           license: data.badges.license
         },
         affiliateLink: data.affiliateLink,
-        reviewLink: data.reviewLink
+        reviewLink: data.reviewLink,
+        content
       } as Casino;
   });
   

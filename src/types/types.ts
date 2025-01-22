@@ -28,5 +28,6 @@ export interface Casino {
   }
   affiliateLink: string
   reviewLink: string
+  content: string
 }
 

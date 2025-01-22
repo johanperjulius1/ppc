@@ -1,4 +1,5 @@
 import { casinos } from "@/lib/casinos-data";
+import { marked } from "marked";
 
 export async function generateStaticParams() {
   return casinos.map((casino) => ({
@@ -15,11 +16,14 @@ export default function CasinoPage({ params }: { params: { id: string } }) {
     return <p>Casino not found</p>;
   }
 
+  const htmlContent = marked(casino.content);
+
   return (
     <div>
       <h1>{casino.title}</h1>
       <p>{casino.excerpt}</p>
       <a href={casino.affiliateLink}>Visit {casino.title}</a>
+      <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
     </div>
   );
 }
