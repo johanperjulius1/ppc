@@ -26,17 +26,19 @@ badges:
 affiliateLink: "https://leovegas.se"
 reviewLink: "/leovegas"
 ---
-
 # Welcome to LeoVegas
+![Example Image](/images/logos/LeoVegas/leovegas-mobile.webp)
 
 LeoVegas is renowned for its mobile-first approach, offering a seamless gaming experience across all devices. With a wide range of games and generous bonuses, it's a top choice for casino enthusiasts.
 
 ## Bonuses and Promotions
+![Example Image](/images/logos/LeoVegas/leovegas-mobile.webp)
 
 - **Welcome Bonus**: Enjoy a 100% bonus up to 4000 kr plus 100 free spins.
 - **VIP Program**: Access exclusive VIP events and unlimited credits.
 
 ## Why Choose LeoVegas?
+![Example Image](/images/logos/LeoVegas/leovegas-mobile.webp)
 
 - **Top-Rated**: Rated 5 stars for its exceptional service and offerings.
 - **Convenient**: Supports Trustly and Swish for easy transactions.
