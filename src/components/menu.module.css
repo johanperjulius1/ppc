@@ -48,12 +48,12 @@
   }
   @media (max-width: 767px) {
     .menuList {
-      background-color: #b22222;
+      background-color: #c03832;
       display: none;
       flex-direction: column;
       height: calc(100vh - 60px);
       left: 0;
-      padding: 1rem 0;
+      padding: 1rem;
       position: fixed;
       top: 45px;
       width: 200px;
