@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Menu from "@/components/menu";
+import Footer from "@/components/footer/footer"
 
 
 // Static data fetching at build time
@@ -15,13 +16,6 @@ export const metadata: Metadata = {
   },
 };
 
-function Footer() {
-  return (
-    <footer style={{ padding: "1rem", background: "#f1f1f1", width: "100%" }}>
-      <p>© 2023 Your Company. All rights reserved.</p>
-    </footer>
-  );
-}
 
 export default function RootLayout({
   children,
@@ -33,7 +27,7 @@ export default function RootLayout({
       <body className={inter.className} style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
         {/* Pass the pre-fetched data to CasinoProvider */}
           <Menu />
-          <main style={{ flex: "1" }}>{children}</main>
+          <main style={{ flex: "1", padding:"1rem" }}>{children}</main>
           <Footer />
       </body>
     </html>

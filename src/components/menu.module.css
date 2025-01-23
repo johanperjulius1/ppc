@@ -19,11 +19,11 @@
     margin: 0 auto;
     max-width: 1140px; /* Match the operator container width */
     width: 100%;
+
   }
   .logo {
     color: white;
     font-size: 1.5rem;
-    margin-left: 10px;
   }
 
   
@@ -42,7 +42,8 @@
   .menuList li a {
     color: white;
     cursor: pointer;
-    padding: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem ;
     text-decoration: none;
   }
   @media (max-width: 767px) {
