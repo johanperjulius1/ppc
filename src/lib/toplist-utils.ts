@@ -27,6 +27,8 @@ export function getAllPostsData(): Casino[] {
           altText: data.logoObject.altText
         },
         rating: data.rating,
+        bonusInSek: data.bonusInSek,
+        freeSpins: data.freeSpins,
         excerpt: data.excerpt,
         positive1: data.positive1,
         positive2: data.positive2,
@@ -48,13 +50,26 @@ export function getAllPostsData(): Casino[] {
         },
         affiliateLink: data.affiliateLink,
         reviewLink: data.reviewLink,
+        metaDescription: data.metaDescription,
         content
       } as Casino;
   });
-  
-  allPostsData.sort((a, b) => {
-    return b.rating - a.rating
-  })
 
   return allPostsData;
 }
+
+export function sortByRating(postsData: Casino[]): Casino[] {
+  return [...postsData].sort((a, b) => b.rating - a.rating);
+}
+
+function isCasinoWithNumberBonus(post: Casino): post is Casino & { turnoverBonus: number } {
+  return typeof post.turnoverBonus === 'number';
+}
+
+export function sortBySmallestBonusTurnover(postsData: Casino[]): Casino[] {
+  return [...postsData]
+    .filter(isCasinoWithNumberBonus)
+    .sort((a, b) => a.turnoverBonus - b.turnoverBonus);
+}
+
+// Add more sorting/filtering functions as needed

@@ -6,6 +6,8 @@ logoObject:
   backgroundColor: "orange"
   altText: "Leovegas casino"
 rating: 5
+bonusInSek: 1000
+freeSpins: 300
 excerpt: "100% bonus upp till 4000 kr + 100 free spins"
 turnoverBonus: 35
 turnoverFreespin: 10
@@ -25,6 +27,8 @@ badges:
   license: false
 affiliateLink: "https://leovegas.se"
 reviewLink: "/leovegas"
+metaDescription: "LeoVegas ar ett av sveriges basta casinon"
+
 ---
 # Welcome to LeoVegas
 ![Example Image](/images/logos/LeoVegas/leovegas-mobile.webp)
