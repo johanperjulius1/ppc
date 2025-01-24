@@ -1,5 +1,6 @@
 import { casinos } from "@/lib/casinos-data";
 import { marked } from "marked";
+import Head from "next/head";
 
 export async function generateStaticParams() {
   return casinos.map((casino) => ({
@@ -20,6 +21,10 @@ export default function CasinoPage({ params }: { params: { id: string } }) {
 
   return (
     <div>
+      <Head>
+        <title>{casino.title}</title>
+        <meta name="description" content={casino.metaDescription} />
+      </Head>
       <h1>{casino.title}</h1>
       <p>{casino.excerpt}</p>
       <a href={casino.affiliateLink}>Visit {casino.title}</a>
