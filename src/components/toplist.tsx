@@ -1,4 +1,4 @@
-import { casinos } from "@/lib/casinos-data";
+import { casinosByRating } from "@/lib/casinos-data";
 import classes from './toplist.module.css';
 import OperatorContainer from './feber/operator-container';
 
@@ -14,7 +14,7 @@ export default function Toplist() {
       <h2 className={classes.subtitle}>
         Bonusarna uppdaterades den {dateDay} {dateMonth} {dateYear}
       </h2>
-      {casinos.map((casino) => (
+      {casinosByRating.map((casino) => (
         <OperatorContainer key={casino.title} casino={casino} />
       ))}
     </div>
