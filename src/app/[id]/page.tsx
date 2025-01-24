@@ -1,7 +1,6 @@
 import { casinos } from "@/lib/casinos-data";
 import { marked } from "marked";
 import type { Metadata } from "next";
-import Head from 'next/head';
 
 export async function generateStaticParams() {
   return casinos.map((casino) => ({
@@ -41,8 +40,7 @@ export default function CasinoPage({ params }: { params: { id: string } }) {
 
   const htmlContent = marked(casino.content);
 
-  // Comprehensive Schema JSON-LD
-  const schema = {
+  const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Review",
     "itemReviewed": {
@@ -86,20 +84,16 @@ export default function CasinoPage({ params }: { params: { id: string } }) {
     "url": `/casino/${casino.title.toLowerCase().replace(/\s+/g, "-")}`
   };
 
+
   return (
-    <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-      </Head>
-      <div>
-        <h1>{casino.title}</h1>
-        <p>{casino.excerpt}</p>
-        <a href={casino.affiliateLink}>Visit {casino.title}</a>
-        <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
-      </div>
-    </>
+    <div>
+       <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}/>
+      <h1>{casino.title}</h1>
+      <p>{casino.excerpt}</p>
+      <a href={casino.affiliateLink}>Visit {casino.title}</a>
+      <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+    </div>
   );
 }
