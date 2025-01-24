@@ -9,8 +9,8 @@ import Footer from "@/components/footer/footer"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'CasinoSisters.com',
-  description: 'CasinoSisters.com - the number one casino review page',
+  title: 'Slotsa.se',
+  description: 'Slotsa - the number one casino review page',
   icons: {
     icon: '/favicon.ico',
   },
