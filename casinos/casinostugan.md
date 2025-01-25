@@ -1,5 +1,5 @@
 ---
-title: "casinostugan"
+title: "Casinostugan"
 logoObject:
   logoTitle: "Casinostugan"
   logoName: "Casinostugan-desktop.jpeg"

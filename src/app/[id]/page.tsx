@@ -49,7 +49,7 @@ export default function CasinoPage({ params }: { params: { id: string } }) {
       "url": casino.affiliateLink,
       "logo": {
         "@type": "ImageObject",
-        "url": `/images/logos/${casino.logoObject.logoName}`,
+        "url": `/images/logos/${casino.title}/${casino.logoObject.logoName}`,
         "width": 600,
         "height": 60
       },

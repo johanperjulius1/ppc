@@ -1,5 +1,5 @@
 ---
-title: "leovegas"
+title: "LeoVegas"
 logoObject:
   logoTitle: "LeoVegas"
   logoName: "leovegas-mobile.webp"
