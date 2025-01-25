@@ -2,7 +2,7 @@
 title: "Casinostugan"
 logoObject:
   logoTitle: "Casinostugan"
-  logoName: "Casinostugan-desktop.jpeg"
+  logoName: "casinostugan-desktop.jpeg"
   backgroundColor: "red"
   altText: Casinostugans logga
 rating: 3.5

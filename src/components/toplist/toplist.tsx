@@ -1,6 +1,6 @@
 import { casinosByRating } from "@/lib/casinos-data";
 import classes from './toplist.module.css';
-import OperatorContainer from './feber/operator-container';
+import OperatorContainer from '../feber/operator-container';
 
 export default function Toplist() {
   

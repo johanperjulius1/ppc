@@ -1,6 +1,6 @@
 import classes from "./badge-board.module.css"
 import Image from "next/image"
-import Rating from "./feber/rating"
+import Rating from "../feber/rating"
 
 interface BadgeBoardProps {
     className: string

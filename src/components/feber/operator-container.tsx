@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './operator-container.module.css'
-import BadgeBoard from '../badge-board'
+import BadgeBoard from '../badge-board/badge-board'
 import CtaContainer from './cta-container'
 import PerksContainer from './perks-container'
 import Rating from './rating'

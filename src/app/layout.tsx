@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Menu from "@/components/menu";
+import Menu from "@/components/menu/menu";
 import Footer from "@/components/footer/footer"
+import styles from './layout.module.css'
 
 
 // Static data fetching at build time
@@ -27,7 +28,7 @@ export default function RootLayout({
       <body className={inter.className} style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
         {/* Pass the pre-fetched data to CasinoProvider */}
           <Menu />
-          <main style={{ flex: "1", padding:"1rem" }}>{children}</main>
+          <main className={styles.main} >{children}</main>
           <Footer />
       </body>
     </html>
