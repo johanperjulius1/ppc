@@ -14,7 +14,7 @@ function Menu () {
         <div className={styles.menuIcon} onClick={toggleMenu}>
           {isOpen ? '✖' : '☰'}
         </div>
-        <div className={styles.logo}>CASINOSISTERS</div>
+        <div className={styles.logo}>Slotsa</div>
         <ul className={`${styles.menuList} ${isOpen ? styles.showMenu : ''}`}>
           <li><Link href="/alla-casinon">Alla Casinon</Link></li>
           <li><Link href="/nya-casinon">Nya Casinon</Link></li>
