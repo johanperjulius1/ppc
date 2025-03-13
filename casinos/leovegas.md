@@ -18,7 +18,7 @@ perks:
   perk2: "Unlimitied credits"
   perk3: "VIP events"
   perk4: "Priority support"
-  perk5: "Free casj"
+  perk5: "Free cash"
   perk6: "Unlimited withdrawals"
 badges:
   trustly: true
