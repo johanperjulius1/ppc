@@ -18,7 +18,7 @@ function Menu () {
         <ul className={`${styles.menuList} ${isOpen ? styles.showMenu : ''}`}>
           <li><Link href="/alla-casinon">Alla Casinon</Link></li>
           <li><Link href="/nya-casinon">Nya Casinon</Link></li>
-          <li><Link href="/casino-bonus">Casino Bonus</Link></li>
+          <li><Link href="/casino-med-bonus">Casino Bonus</Link></li>
           <li><Link href="/free-spins">Free Spins</Link></li>
         </ul>
       </div>
