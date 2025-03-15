@@ -1,4 +1,6 @@
-# Casinon med Välkomstbonus
+---
+title: "Casinon med Välkomstbonus"
+---
 
 ## Inledning
 En välkomstbonus är en av de mest attraktiva aspekterna för nya spelare på ett online casino. Denna artikel utforskar vad en välkomstbonus är, olika typer av välkomstbonusar som finns tillgängliga, och vad man bör tänka på när man tar emot en sådan bonus.
