@@ -1,7 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { casinoMedBankidData } from '@/lib/categories-data';
+import { marked } from 'marked';
 
-export default function page() {
+function CasinoBankidPage() {
+  const htmlContent = marked(casinoMedBankidData.content);
   return (
-    <div>page</div>
-  )
+    <div>
+      <h1>{casinoMedBankidData.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+    </div>
+  );
 }
+
+export default CasinoBankidPage;
