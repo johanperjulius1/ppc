@@ -1,9 +1,15 @@
 import React from 'react';
+import { casinoMedFreeSpinsData } from '@/lib/categories-data';
+import { marked } from 'marked';
 
-function FreeSpins() {
+function FreeSpinsPage() {
+  const htmlContent = marked(casinoMedFreeSpinsData.content);
   return (
-    <div>Free Spins</div>
+    <div>
+      <h1>{casinoMedFreeSpinsData.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+    </div>
   );
 }
 
-export default FreeSpins; 
+export default FreeSpinsPage; 
