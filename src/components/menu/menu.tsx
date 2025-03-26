@@ -19,8 +19,9 @@ function Menu () {
           <li><Link href="/alla-casinon">Alla Casinon</Link></li>
           <li><Link href="/nya-casinon">Nya Casinon</Link></li>
           <li><Link href="/casino-med-bonus">Casino Bonus</Link></li>
-          <li><Link href="/free-spins">Free Spins</Link></li>
+          <li><Link href="/casino-med-free-spins">Free Spins</Link></li>
           <li><Link href="/casino-med-bankid">Casino Med BankID</Link></li>
+          <li><Link href="/casino-med-swish">Casino Med Swish</Link></li>
         </ul>
       </div>
     </nav>

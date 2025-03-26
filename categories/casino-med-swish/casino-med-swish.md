@@ -1,3 +1,7 @@
+---
+title: "Alla svenska casinon med där du kan betala med Swish"
+---
+
 # Casinon med Swish
 
 ## Inledning

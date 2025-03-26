@@ -6,5 +6,5 @@ const casinoMedBonusData = getCategoryData('/casino-med-bonus/casino-med-bonus.m
 const casinoMedBankidData = getCategoryData('/casino-med-bankid/casino-med-bankid.md');
 const casinoMedFreeSpinsData = getCategoryData('/casino-med-free-spins/casino-med-free-spins.md');
 const allaCasinonData = getCategoryData('/alla-casinon/alla-casinon.md');
-
-export { casinoMedBonusData, casinoMedBankidData, casinoMedFreeSpinsData, allaCasinonData };
+const casinoMedSwishData=getCategoryData('/casino-med-swish/casino-med-swish.md')
+export { casinoMedBonusData, casinoMedBankidData, casinoMedFreeSpinsData, allaCasinonData, casinoMedSwishData };

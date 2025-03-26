@@ -1,3 +1,7 @@
+---
+title: "Välkommen till vår sida om alla svenska casinon med free spins"
+---
+
 Online Casinon med Free Spins – En Guide för Svenska Spelare
 I takt med att digitaliseringen breder ut sig har spelindustrin sett en kraftig utveckling. Idag erbjuds svenska spelare inte bara traditionella casinospel utan också en rad spännande bonusar – bland dem free spins. Men vad innebär egentligen dessa gratissnurr och hur fungerar de på svenska online casinon?
 

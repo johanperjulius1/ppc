@@ -1,3 +1,7 @@
+---
+title: "Här listar vi alla casinon där du kan registrera dig och logga in med BankID"
+---
+
 # Casinon med BankID
 
 ## Inledning
