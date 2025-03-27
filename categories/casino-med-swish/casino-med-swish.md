@@ -1,5 +1,10 @@
 ---
 title: "Alla svenska casinon med där du kan betala med Swish"
+faq:
+  - question: "Hur snabbt kan jag använda pengarna jag sätter in med Swish?"
+    answer: "Transaktioner med Swish är nästan omedelbara, så du kan börja spela direkt efter att insättningen är gjord."
+  - question: "Är det säkert att använda Swish på online casinon?"
+    answer: "Ja, Swish använder avancerad säkerhetsteknik för att skydda dina pengar och personliga uppgifter."
 ---
 
 # Casinon med Swish
