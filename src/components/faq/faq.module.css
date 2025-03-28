@@ -72,13 +72,10 @@
     border-radius: 50%;
   }
   
-  
-  
   .faq.active .faq-toggle {
     background-color: #9fa4a8;
     color: #fff;
   }
-  
   
   .faq.active .fa-chevron-down {
     display: none;

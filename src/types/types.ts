@@ -32,3 +32,18 @@ export interface Casino {
   content: string
 }
 
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
+
+export interface FaqBox {
+  faqItems?: FaqItem[];
+}
+
+export interface Category {
+  title: string;
+  faq?: FaqBox;
+  metaDescription: string
+  content: string
+}
