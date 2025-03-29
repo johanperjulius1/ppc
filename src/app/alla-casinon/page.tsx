@@ -9,7 +9,12 @@ const AllaCasinonPage = () => {
         <div>
             <h1>{allaCasinonData.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
-            {allaCasinonData.faq && <FaqComponent faqBox={allaCasinonData.faq} />}
+            {allaCasinonData.faq && (
+                <FaqComponent 
+                    faqBox={allaCasinonData.faq} 
+                    title={allaCasinonData.title} 
+                />
+            )}
         </div>
     );
 };
