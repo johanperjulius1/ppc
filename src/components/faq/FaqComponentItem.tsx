@@ -7,7 +7,7 @@ import { FaqItem } from '@/types/types'
 import styles from './FaqComponent.module.css'
 
 function FaqComponentItem({ question, answer }: FaqItem) {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(true);
   
   const toggleFaq = () => {
     setIsActive(!isActive);
