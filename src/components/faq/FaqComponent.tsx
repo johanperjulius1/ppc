@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaqBox } from "@/types/types"
 import FaqComponentItem from './FaqComponentItem'
-import styles from './faq.module.css'
+import styles from './FaqComponent.module.css'
 
 function FaqComponent({ 
   faqBox, 

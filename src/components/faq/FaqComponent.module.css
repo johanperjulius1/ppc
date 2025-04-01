@@ -1,6 +1,5 @@
 .faq-container {
     max-width: 600px;
-    margin: 0 auto;
   }
   
   .faq {
@@ -8,7 +7,7 @@
     border: 1px solid #9fa4a8;
     border-radius: 10px;
     margin: 20px 0;
-    padding: 30px;
+    padding: 30px 25px 30px 10px;
     position: relative;
     overflow: hidden;
     transition: 0.3s ease;
@@ -20,34 +19,14 @@
       0 3px 6px rgba(0, 0, 0, 0.1),
       0 3px 6px rgba(0, 0, 0, 0.1);
   }
-  
-  .faq.active::before,
-  .faq.active::after {
-    content: '\f075';
-    font-family: 'Font Awesome 5 Free';
-    color: #2ecc71;
-    font-size: 7rem;
-    position: absolute;
-    opacity: 0.2;
-    top: 20px;
-    left: 20px;
-    z-index: 0;
-  }
-  
-  .faq.active::before {
-    color: #3498db;
-    top: -10px;
-    left: -30px;
-    transform: rotateY(180deg);
-  }
-  
+
   .faq-title {
     margin: 0 35px 0 0;
   }
   
   .faq-text {
     display: none;
-    margin: 30px 0 0
+    margin: 15px 0 0
   }
   
   .faq.active .faq-text {
@@ -64,8 +43,8 @@
     font-size: 16px;
     padding: 0;
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 25px;
+    right: 20px;
     height: 30px;
     width: 30px;
     outline: 0;
@@ -77,10 +56,10 @@
     color: #fff;
   }
   
-  .faq.active .fa-chevron-down {
+  .faq.active :global(.fa-chevron-down) {
     display: none;
   }
   
-  .faq:not(.active) .fa-times {
+  .faq:not(.active) :global(.fa-times) {
     display: none;
   }

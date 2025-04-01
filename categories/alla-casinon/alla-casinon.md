@@ -1,5 +1,5 @@
 ---
-title: Alla casinon i Sverige
+title: Alla online casinon i Sverige
 headline: "Välkommen till vår kompletta lista med alla casinon i Sverige"
 faq:
   - question: "Vad är de största fördelarna med nya casinon?"
@@ -9,9 +9,6 @@ faq:
   - question: "Hur kan jag kontrollera om ett nytt casino är pålitligt?"
     answer: "Kontrollera casinots licens, läs användarrecensioner och undersök deras kundsupport och betalningsmetoder."
 ---
-
-# Online Casino i Sverige
-
 ## Inledning
 Online casinospel har snabbt blivit en populär form av underhållning i Sverige. Denna artikel utforskar den svenska online casinomarknaden, dess reglering, och de viktigaste aspekterna som svenska spelare bör känna till.
 
