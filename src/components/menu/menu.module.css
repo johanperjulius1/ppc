@@ -26,6 +26,7 @@
 
 .link-div {
   color: white;
+  /* font-size: 15px; */
 }
 
 .link-div a {
@@ -36,6 +37,8 @@
   background-color: #c03832;
   border: none;
   color: white;
+  font-size: 17px;
+  padding:0;
 }
 
 .nav-button:hover {
