@@ -35,8 +35,8 @@ function menu() {
           </div>
           <div className={styles['link-div']}><Link href="/casino-med-free-spins">Free spins</Link></div>
           <div className={styles['link-div']}><Link href="/casino-med-free-spins-utan-omsattningskrav">Free spins utan omsättningskrav</Link></div>
-          <div className={styles['link-div']}><Link href="/casino-med-bankid">Casino med bankId</Link></div>
-          <div className={styles['link-div']}><Link href="/casino-med-swish">Casino med swish</Link></div>
+          <div className={styles['link-div']}><Link href="/casino-med-bankid">Casino med BankId</Link></div>
+          <div className={styles['link-div']}><Link href="/casino-med-swish">Casino med Swish</Link></div>
         </div>
       </nav>
     </header>

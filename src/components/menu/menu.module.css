@@ -33,16 +33,51 @@
   color: white;
   text-decoration: none;
 }
+
+.link-div a:hover {
+  text-decoration: underline;
+}
+
 .nav-button {
   background-color: #c03832;
   border: none;
   color: white;
   font-size: 17px;
-  padding:0;
+  padding: 0;
 }
 
 .nav-button:hover {
   cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .nav-container {
+    background-color: #c03832;
+    /* display: none; */
+    height: calc(100vh - 470px);
+    left: 0;
+    padding: 1rem;
+    position: fixed;
+    top: 75px;
+    width: 300px;
+    z-index: 20;
+  }
+
+  .link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 25px;
+  }
+
+  .link-div a {
+    color: white;
+    font-size: 22px;
+  }
+  
+  .link-div a:active {
+    text-decoration: underline;
+  }
 }
 
 /* .navbar {
