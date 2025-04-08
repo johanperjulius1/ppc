@@ -65,7 +65,7 @@
   .nav-container {
     background-color: #c03832;
     /* display: none; */
-    height: calc(100vh - 470px);
+    height: 430px;
     left: 0;
     padding: 1rem;
     position: fixed;
