@@ -1,8 +1,8 @@
 .header {
   background-color: #a02d28;
-  position: fixed; 
-  top: 0;          
-  width: 100%;     
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 1000;
 }
 .logo {
@@ -55,6 +55,13 @@
 }
 
 @media (max-width: 767px) {
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
   .nav-container {
     background-color: #c03832;
     /* display: none; */
@@ -78,7 +85,7 @@
     color: white;
     font-size: 22px;
   }
-  
+
   .link-div a:active {
     text-decoration: underline;
   }
