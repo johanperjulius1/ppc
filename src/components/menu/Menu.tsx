@@ -1,14 +1,26 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import styles from './menu.module.css';
 import Link from 'next/link';
 
-function menu() {
+function Menu() {
+
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
+  }
+
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>Slotsa.se</div>
-      <nav className={styles['nav-container']}>
+      {/* <div className='hello-wrapper'> */}
+        <div className={styles.menuIcon} onClick={toggleMenu}>
+          {isOpen ? '☰' : '✖'}
+        </div>
+        <div className={styles.logo}>Slotsa.se</div>
+      {/* </div> */}
+      <nav className={`${styles['nav-container']} ${isOpen ? styles.hidden : ''}`}>
         <div className={styles['link-container']}>
-          {/* <div className={styles['link-div']}><Link href="/alla-casinon">Alla Casinon</Link></div> */}
           <div className={styles['link-div']}><Link href="/nya-casinon">Nya casinon</Link></div>
           <div className={styles['link-div']}><Link href="/casino-med-bonus">Casino med bonus</Link></div>
           <div className={styles['link-div']}>
@@ -43,7 +55,7 @@ function menu() {
   )
 }
 
-export default menu
+export default Menu
 
 
 
