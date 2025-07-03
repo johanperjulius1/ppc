@@ -22,6 +22,8 @@ export interface Casino {
     logoName: string
     backgroundColor: string
     altText: string
+    width: number
+    height: number
   };
   rating: number;
   excerpt: string;
