@@ -5,6 +5,8 @@ interface LogoObject {
     logoName: string;
     backgroundColor: string;
     altText: string;
+    width: number;
+    height: number;
 }
 
 interface LogoProps {
@@ -12,25 +14,14 @@ interface LogoProps {
 }
 
 export default function LogoContainer({ logoObject }: LogoProps) {
-    const { logoTitle, logoName, backgroundColor, altText } = logoObject;
+    const { logoTitle, logoName, backgroundColor, altText, width, height } = logoObject;
     const logoPath = `/images/logos/${logoTitle}/${logoName}`;
     return (
         <div style={{ backgroundColor }}>
-            <Image width={100} height={80} src={logoPath} alt={altText} />
+            <Image width={width} height={height} src={logoPath} alt={altText} />
         </div>
     );
 }
-
-// Padding:
-// Definition: Padding is the space between the element's content 
-// and its border. It creates space inside the element, around its 
-// content.
-
-// Role: Padding is used to increase the space within an element, 
-// making it visually appealing and improving readability. 
-// For example, if you have text inside a box, you might use padding 
-// to ensure the text doesn’t touch the edges of the box.
-
 
 // --- Box-sizing: border-box
 

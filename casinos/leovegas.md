@@ -2,9 +2,11 @@
 title: "LeoVegas"
 logoObject:
   logoTitle: "LeoVegas"
-  logoName: "leovegas-mobile.webp"
+  logoName: "leo-vegas-2.png"
   backgroundColor: "orange"
   altText: "Leovegas casino"
+  width: 105
+  height: 35
 rating: 5
 bonusInSek: 1000
 freeSpins: 300

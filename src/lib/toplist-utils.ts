@@ -24,7 +24,9 @@ export function getAllPostsData(): Casino[] {
           logoTitle: data.logoObject.logoTitle,
           logoName: data.logoObject.logoName,
           backgroundColor: data.logoObject.backgroundColor,
-          altText: data.logoObject.altText
+          altText: data.logoObject.altText,
+          width: data.logoObject.width,
+          height: data.logoObject.height
         },
         rating: data.rating,
         bonusInSek: data.bonusInSek,

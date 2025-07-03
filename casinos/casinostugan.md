@@ -5,6 +5,8 @@ logoObject:
   logoName: "casinostugan-desktop.jpeg"
   backgroundColor: "red"
   altText: Casinostugans logga
+  width: 105
+  height: 35
 rating: 3.5
 bonusInSek: 1000
 freeSpins: 300
