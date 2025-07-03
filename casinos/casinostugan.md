@@ -2,11 +2,11 @@
 title: "Casinostugan"
 logoObject:
   logoTitle: "Casinostugan"
-  logoName: "casinostugan-desktop.jpeg"
-  backgroundColor: "red"
+  logoName: "casinostugan-transparent.png"
+  backgroundColor: "#e3e3e3"
   altText: Casinostugans logga
-  width: 105
-  height: 35
+  width: 120
+  height: 130
 rating: 3.5
 bonusInSek: 1000
 freeSpins: 300
