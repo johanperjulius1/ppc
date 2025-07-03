@@ -26,7 +26,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className} style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
-        {/* Pass the pre-fetched data to CasinoProvider */}
           <Menu />
           <main className={styles.main} >{children}</main>
           <Footer />
