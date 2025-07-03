@@ -48,6 +48,7 @@ export function getAllPostsData(): Casino[] {
           bankId: data.badges.bankId,
           license: data.badges.license
         },
+        faq: data.faq,
         affiliateLink: data.affiliateLink,
         reviewLink: data.reviewLink,
         metaDescription: data.metaDescription,

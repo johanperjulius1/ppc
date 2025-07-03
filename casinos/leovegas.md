@@ -25,6 +25,13 @@ badges:
   swish: true
   bankId: false
   license: false
+faq:
+  - question: "Vad är de största fördelarna med nya casinon?"
+    answer: "Nya casinon erbjuder ofta modern teknik, attraktiva bonusar och en förbättrad användarupplevelse."
+  - question: "Är nya casinon säkra att spela på?"
+    answer: "Ja, förutsatt att de har en pålitlig licens från t.ex. Spelinspektionen eller Malta Gaming Authority."
+  - question: "Hur kan jag kontrollera om ett nytt casino är pålitligt?"
+    answer: "Kontrollera casinots licens, läs användarrecensioner och undersök deras kundsupport och betalningsmetoder."
 affiliateLink: "https://leovegas.se"
 reviewLink: "/leovegas"
 metaDescription: "LeoVegas ar ett av sveriges basta casinon"

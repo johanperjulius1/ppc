@@ -1,6 +1,7 @@
 import { casinos } from "@/lib/casinos-data";
 import { marked } from "marked";
 import type { Metadata } from "next";
+import FaqComponent from "@/components/faq/FaqComponent";
 
 export async function generateStaticParams() {
   return casinos.map((casino) => ({
@@ -84,16 +85,23 @@ export default function CasinoPage({ params }: { params: { id: string } }) {
     "url": `/casino/${casino.title.toLowerCase().replace(/\s+/g, "-")}`
   };
 
-
   return (
     <div>
-       <script
+      <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}/>
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <h1>{casino.title}</h1>
       <p>{casino.excerpt}</p>
       <a href={casino.affiliateLink}>Visit {casino.title}</a>
       <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+      {casino.faq && (
+        <section>
+          <FaqComponent
+            faqBox={casino.faq}
+            title={casino.title}
+          />
+        </section>
+      )}
     </div>
   );
 }

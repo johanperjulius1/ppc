@@ -1,3 +1,20 @@
+
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
+
+export interface FaqBox {
+  faqItems?: FaqItem[];
+}
+
+export interface Category {
+  title: string;
+  faq?: FaqBox;
+  metaDescription: string
+  content: string
+}
+
 export interface Casino {
   title: string;
   logoObject: {
@@ -26,24 +43,9 @@ export interface Casino {
     bankId: boolean
     license: boolean
   }
+  faq?: FaqBox
   affiliateLink: string
   reviewLink: string
-  metaDescription: string
-  content: string
-}
-
-export interface FaqItem {
-  question: string;
-  answer: string;
-}
-
-export interface FaqBox {
-  faqItems?: FaqItem[];
-}
-
-export interface Category {
-  title: string;
-  faq?: FaqBox;
   metaDescription: string
   content: string
 }
