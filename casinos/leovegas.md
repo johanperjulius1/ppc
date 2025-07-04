@@ -8,11 +8,11 @@ logoObject:
   width: 105
   height: 35
 rating: 5
-bonusInSek: 1000
+bonusAmount: 1000
 freeSpins: 300
 excerpt: "100% bonus upp till 4000 kr + 100 free spins"
 turnoverBonus: 35
-turnoverFreespin: 10
+turnoverFreeSpin: 10
 positive1: "Bonus: 2500"
 positive2: "300 free spin"
 perks:

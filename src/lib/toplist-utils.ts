@@ -29,13 +29,13 @@ export function getAllPostsData(): Casino[] {
           height: data.logoObject.height
         },
         rating: data.rating,
-        bonusInSek: data.bonusInSek,
+        bonusAmount: data.bonusAmount,
         freeSpins: data.freeSpins,
         excerpt: data.excerpt,
         positive1: data.positive1,
         positive2: data.positive2,
         turnoverBonus: data.turnoverBonus,
-        turnoverFreespin: data.turnoverFreespin,
+        turnoverFreeSpin: data.turnoverFreeSpin,
         perks: {
           perk1: data.perks?.perk1 || "",
           perk2: data.perks?.perk2 || "",
@@ -78,5 +78,5 @@ export function sortBySmallestBonusTurnover(postsData: Casino[]): Casino[] {
 export function sortByBonusAmount (postsData: Casino[]): Casino[] {
   return [...postsData]
   .filter(isCasinoWithNumberBonus)
-  .sort((a, b) => a.bonusInSek - b.bonusInSek); 
+  .sort((a, b) => a.bonusAmount - b.bonusAmount); 
 }

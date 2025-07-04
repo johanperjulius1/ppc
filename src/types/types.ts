@@ -26,11 +26,13 @@ export interface Casino {
     height: number
   };
   rating: number;
+  bonusAmount:number;
+  freeSpins: number;
   excerpt: string;
   positive1: string;
   positive2: string;
   turnoverBonus: number | string;
-  turnoverFreespin: number | string;
+  turnoverFreeSpin: number | string;
   perks: {
     perk1?: number | string
     perk2?: number | string

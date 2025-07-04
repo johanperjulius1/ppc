@@ -8,11 +8,11 @@ logoObject:
   width: 120
   height: 130
 rating: 3.5
-bonusInSek: 1000
+bonusAmount: 1000
 freeSpins: 300
 excerpt: "Bonus Upp till 1000 kr + 100 Gratissnurr + 100 kr i Live Casino"
 turnoverBonus: 15
-turnoverFreespin: "N/A"
+turnoverFreeSpin: "N/A"
 positive1: "Bonus: 1000"
 positive2: "300 free spin"
 perks:
