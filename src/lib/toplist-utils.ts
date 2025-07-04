@@ -75,4 +75,8 @@ export function sortBySmallestBonusTurnover(postsData: Casino[]): Casino[] {
     .sort((a, b) => a.turnoverBonus - b.turnoverBonus);
 }
 
-// Add more sorting/filtering functions as needed
+export function sortByBonusAmount (postsData: Casino[]): Casino[] {
+  return [...postsData]
+  .filter(isCasinoWithNumberBonus)
+  .sort((a, b) => a.bonusInSek - b.bonusInSek); 
+}
