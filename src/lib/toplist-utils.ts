@@ -86,3 +86,9 @@ export function sortBySwish(postsData: Casino[]): Casino[] {
     .filter((casino) => casino.badges.trustly)
     .sort((a, b) => b.rating - a.rating);
 }
+
+export function sortByBankId(postsData: Casino[]): Casino[] {
+  return [...postsData]
+    .filter((casino) => casino.badges.bankId)
+    .sort((a, b) => b.rating - a.rating);
+}

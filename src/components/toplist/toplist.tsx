@@ -14,17 +14,10 @@ export default function Toplist({
   subtitle
 }: ToplistProps) {
 
-  const dateDay = new Date().getDate().toString();
-  const dateMonth = new Date().toLocaleString('default', { month: 'long' });
-  const dateYear = new Date().getFullYear();
-
-  const defaultSubtitle = `Bonusarna uppdaterades den ${dateDay} ${dateMonth} ${dateYear}`;
-
   return (
     <div className={classes.wrapper}>
       <h1 className={classes.headline}>{title}</h1>
       <h2 className={classes.subtitle}>
-        {subtitle || defaultSubtitle}
       </h2>
       {casinos.map((casino) => (
         <OperatorContainer key={casino.title} casino={casino} />
