@@ -23,7 +23,7 @@ perks:
   perk5: "Free cash"
   perk6: "Unlimited withdrawals"
 badges:
-  trustly: true
+  trustly: false
   swish: true
   bankId: false
   license: false
