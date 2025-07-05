@@ -7,16 +7,16 @@ import { Casino } from "../types/types"; // Adjust the import path as necessary
 const postsDirectory = path.join(process.cwd(), "casinos");
 
 export function getPostsFiles() {
-    // Returns an array of file names in the directory
-    return fs.readdirSync(postsDirectory);
+  // Returns an array of file names in the directory
+  return fs.readdirSync(postsDirectory);
 }
 
 export function getAllPostsData(): Casino[] {
   const postFiles = getPostsFiles();
   const allPostsData = postFiles.map((postFile) => {
-      const filePath = path.join(postsDirectory, postFile);
-      const fileContent = fs.readFileSync(filePath, "utf-8");
-      const { data, content } = matter(fileContent);
+    const filePath = path.join(postsDirectory, postFile);
+    const fileContent = fs.readFileSync(filePath, "utf-8");
+    const { data, content } = matter(fileContent);
 
       return {
         title: data.title,
@@ -78,5 +78,5 @@ export function sortBySmallestBonusTurnover(postsData: Casino[]): Casino[] {
 export function sortByBonusAmount (postsData: Casino[]): Casino[] {
   return [...postsData]
   .filter(isCasinoWithNumberBonus)
-  .sort((a, b) => a.bonusAmount - b.bonusAmount); 
+  .sort((a, b) => b.bonusAmount - a.bonusAmount); 
 }

@@ -1,7 +1,8 @@
 import Toplist from "@/components/toplist/toplist";
+import { casinosByRating } from "@/lib/casinos-data";
 
-export default function Home (){  
+export default function Home() {
   return (
-    <Toplist/>
+    <Toplist casinos={casinosByRating} />
   )
 }
