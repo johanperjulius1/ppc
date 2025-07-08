@@ -9,12 +9,12 @@ logoObject:
   height: 130
 rating: 3.5
 bonusAmount: 2500
-freeSpins: 300
+freeSpins: "N/A"
 excerpt: "Bonus Upp till 1000 kr + 100 Gratissnurr + 100 kr i Live Casino"
 turnoverBonus: 0
 turnoverFreeSpin: "N/A"
 positive1: "Bonus: 2500"
-positive2: "300 free spin"
+positive2: "great design"
 perks:
   perk1: "Free drinks"
   perk2: "VIP lounge access"

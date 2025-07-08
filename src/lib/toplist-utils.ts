@@ -98,3 +98,9 @@ export function sortByBonusTurnover(postsData: Casino[]): Casino[] {
     .filter((casino) => casino.turnoverBonus === 0 )
     .sort((a, b) => b.bonusAmount - a.bonusAmount);
 }
+
+export function sortByFreeSpins(postsData: Casino[]): Casino[] {
+  return [...postsData]
+    .filter((casino) => typeof casino.freeSpins === "number" && casino.freeSpins > 0)
+    .sort((a, b) => b.freeSpins! - a.freeSpins!);
+}
