@@ -12,7 +12,7 @@ bonusAmount: 1000
 freeSpins: 300
 excerpt: "100% bonus upp till 4000 kr + 100 free spins"
 turnoverBonus: 35
-turnoverFreeSpin: 10
+turnoverFreeSpins: 0
 positive1: "Bonus: 1000"
 positive2: "300 free spin"
 perks:

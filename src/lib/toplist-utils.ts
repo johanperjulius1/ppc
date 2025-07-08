@@ -35,7 +35,7 @@ export function getAllPostsData(): Casino[] {
       positive1: data.positive1,
       positive2: data.positive2,
       turnoverBonus: data.turnoverBonus,
-      turnoverFreeSpin: data.turnoverFreeSpin,
+      turnoverFreeSpins: data.turnoverFreeSpins,
       perks: {
         perk1: data.perks?.perk1 || "",
         perk2: data.perks?.perk2 || "",
@@ -95,7 +95,7 @@ export function sortByBankId(postsData: Casino[]): Casino[] {
 
 export function sortByBonusTurnover(postsData: Casino[]): Casino[] {
   return [...postsData]
-    .filter((casino) => casino.turnoverBonus === 0 )
+    .filter((casino) => casino.turnoverBonus === 0)
     .sort((a, b) => b.bonusAmount - a.bonusAmount);
 }
 
@@ -103,4 +103,9 @@ export function sortByFreeSpins(postsData: Casino[]): Casino[] {
   return [...postsData]
     .filter((casino) => typeof casino.freeSpins === "number" && casino.freeSpins > 0)
     .sort((a, b) => b.freeSpins! - a.freeSpins!);
+}
+
+export function sortByFreeSpinsTurnover(postsData: Casino[]): Casino[] {
+  return [...postsData]
+    .filter((casino) => typeof casino.freeSpins === "number" && casino.turnoverFreeSpins === 0)
 }

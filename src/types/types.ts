@@ -32,7 +32,7 @@ export interface Casino {
   positive1: string;
   positive2: string;
   turnoverBonus: number | string;
-  turnoverFreeSpin: number | string;
+  turnoverFreeSpins: number | string;
   perks: {
     perk1?: number | string
     perk2?: number | string
