@@ -8,6 +8,7 @@ import Toplist from '@/components/toplist/toplist';
 function CasinoBankidPage() {
   const casinosByBankId = sortByBankId(casinos)
   const htmlContent = marked(casinoMedBankidData.content);
+  
   return (
     <div>
       <h1>{casinoMedBankidData.title}</h1>

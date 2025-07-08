@@ -92,3 +92,9 @@ export function sortByBankId(postsData: Casino[]): Casino[] {
     .filter((casino) => casino.badges.bankId)
     .sort((a, b) => b.rating - a.rating);
 }
+
+export function sortByBonusTurnover(postsData: Casino[]): Casino[] {
+  return [...postsData]
+    .filter((casino) => casino.turnoverBonus === 0 )
+    .sort((a, b) => b.bonusAmount - a.bonusAmount);
+}

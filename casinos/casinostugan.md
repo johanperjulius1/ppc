@@ -11,7 +11,7 @@ rating: 3.5
 bonusAmount: 2500
 freeSpins: 300
 excerpt: "Bonus Upp till 1000 kr + 100 Gratissnurr + 100 kr i Live Casino"
-turnoverBonus: 15
+turnoverBonus: 0
 turnoverFreeSpin: "N/A"
 positive1: "Bonus: 2500"
 positive2: "300 free spin"

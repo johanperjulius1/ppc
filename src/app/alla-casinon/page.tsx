@@ -5,6 +5,7 @@ import FaqComponent from '@/components/faq/FaqComponent';
 
 const AllaCasinonPage = () => {
     const htmlContent = marked(allaCasinonData.content);
+    
     return (
         <div>
             <h1>{allaCasinonData.title}</h1>
