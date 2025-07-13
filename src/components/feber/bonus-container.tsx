@@ -5,10 +5,10 @@ interface BonusProps {
     positive1: string
     positive2: string
     turnoverBonus: number | string
-    turnoverFreeSpin: number | string
+    turnoverFreeSpins: number | string
 }
 
-export default function BonusContainer({ title, positive1, positive2, turnoverBonus, turnoverFreeSpin }: BonusProps) {
+export default function BonusContainer({ title, positive1, positive2, turnoverBonus, turnoverFreeSpins }: BonusProps) {
     return (
         <>
             <h3 className={classes.h3}>{title}</h3>
@@ -54,7 +54,7 @@ export default function BonusContainer({ title, positive1, positive2, turnoverBo
                         <path d="M12 18V6"></path>
                     </svg>
                     <span style={{ marginLeft: "4px" }}>
-                        Oms.krav på freespins: <span style={{ fontWeight: "600", color: "black" }}>{turnoverFreeSpin ? turnoverFreeSpin : 0}</span>
+                        Oms.krav på freespins: <span style={{ fontWeight: "600", color: "black" }}>{turnoverFreeSpins ? turnoverFreeSpins : 0}</span>
                     </span>
                 </div>
             </div>

@@ -12,7 +12,7 @@ bonusAmount: 2500
 freeSpins: "N/A"
 excerpt: "Bonus Upp till 1000 kr + 100 Gratissnurr + 100 kr i Live Casino"
 turnoverBonus: 0
-turnoverFreeSpin: "N/A"
+turnoverFreeSpins: "N/A"
 positive1: "Bonus: 2500"
 positive2: "great design"
 perks:

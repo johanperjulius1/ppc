@@ -16,7 +16,7 @@ interface CasinoProps {
 
 export default function OperatorContainer({ casino }: CasinoProps) {
 
-    const { title, logoObject, rating, excerpt, positive1, positive2, turnoverBonus, turnoverFreeSpin, perks, badges, affiliateLink, reviewLink } = casino;
+    const { title, logoObject, rating, excerpt, positive1, positive2, turnoverBonus, turnoverFreeSpins, perks, badges, affiliateLink, reviewLink } = casino;
 
     return (
         <main>
@@ -26,7 +26,7 @@ export default function OperatorContainer({ casino }: CasinoProps) {
             >
                 <div className={classes["logo-container"]}  style={{ backgroundColor: logoObject.backgroundColor}} ><LogoContainer logoObject={logoObject}/></div>
                 <div className={classes["bonus-container"]}>
-                    <BonusContainer title={title} turnoverBonus={turnoverBonus} turnoverFreeSpin={turnoverFreeSpin} positive1={positive1} positive2={positive2} />
+                    <BonusContainer title={title} turnoverBonus={turnoverBonus} turnoverFreeSpins={turnoverFreeSpins} positive1={positive1} positive2={positive2} />
                 </div>
                 <div className={classes["rating-container"]}>
                     <Rating rating={rating}></Rating>
