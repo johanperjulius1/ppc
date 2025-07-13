@@ -1,15 +1,20 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import styles from './menu.module.css';
 import Link from 'next/link';
 
 function Menu() {
-
   const [isOpen, setIsOpen] = useState(false)
+  const pathname = usePathname()
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
   }
+
+  useEffect(() => {
+    setIsOpen(false)
+  }, [pathname])
 
   return (
     <header className={styles.header}>
@@ -37,36 +42,3 @@ function Menu() {
 }
 
 export default Menu
-
-
-
-// "use client"
-// import React, { useState } from 'react';
-// import styles from './menu.module.css';
-// import Link from 'next/link';
-
-// function Menu () {
-//   const [isOpen, setIsOpen] = useState(false);
-//   const toggleMenu = () => {
-//     setIsOpen(!isOpen);
-//   };
-//   return (
-//     <nav className={styles.navbar}>
-//       <div className={styles['navbar-inner']}>
-//         <div className={styles.menuIcon} onClick={toggleMenu}>
-//           {isOpen ? '✖' : '☰'}
-//         </div>
-//         <div className={styles.logo}>Slotsa</div>
-//         <ul className={`${styles.menuList} ${isOpen ? styles.showMenu : ''}`}>
-//           <li><Link href="/alla-casinon">Alla Casinon</Link></li>
-//           <li><Link href="/nya-casinon">Nya Casinon</Link></li>
-//           <li><Link href="/casino-med-bonus">Casino Bonus</Link></li>
-//           <li><Link href="/casino-med-free-spins">Free Spins</Link></li>
-//           <li><Link href="/casino-med-bankid">Casino Med BankID</Link></li>
-//           <li><Link href="/casino-med-swish">Casino Med Swish</Link></li>
-//         </ul>
-//       </div>
-//     </nav>
-//   );
-// };
-// export default Menu; 
