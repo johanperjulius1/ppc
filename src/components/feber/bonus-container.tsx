@@ -54,7 +54,7 @@ export default function BonusContainer({ title, positive1, positive2, turnoverBo
                         <path d="M12 18V6"></path>
                     </svg>
                     <span style={{ marginLeft: "4px" }}>
-                        Oms.krav på freespins: <span style={{ fontWeight: "600", color: "black" }}>{turnoverFreeSpin}</span>
+                        Oms.krav på freespins: <span style={{ fontWeight: "600", color: "black" }}>{turnoverFreeSpin ? turnoverFreeSpin : 0}</span>
                     </span>
                 </div>
             </div>
