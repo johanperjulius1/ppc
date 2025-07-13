@@ -27,6 +27,7 @@ badges:
   swish: true
   bankId: true
   license: true
+newCasino: false
 faq:
   - question: "Vad är de största fördelarna med nya casinon?"
     answer: "Nya casinon erbjuder ofta modern teknik, attraktiva bonusar och en förbättrad användarupplevelse."

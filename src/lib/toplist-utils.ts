@@ -50,6 +50,7 @@ export function getAllPostsData(): Casino[] {
         bankId: data.badges.bankId,
         license: data.badges.license
       },
+      newCasino: data.newCasino,
       faq: data.faq,
       affiliateLink: data.affiliateLink,
       reviewLink: data.reviewLink,
@@ -108,4 +109,10 @@ export function sortByFreeSpins(postsData: Casino[]): Casino[] {
 export function sortByFreeSpinsTurnover(postsData: Casino[]): Casino[] {
   return [...postsData]
     .filter((casino) => typeof casino.freeSpins === "number" && casino.turnoverFreeSpins === 0)
+}
+
+export function sortByNewCasino(postsData: Casino[]): Casino[] {
+  return [...postsData]
+    .filter((casino) => casino.newCasino === true)
+    .sort((a, b) => b.rating - a.rating);
 }

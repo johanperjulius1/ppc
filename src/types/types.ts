@@ -47,6 +47,7 @@ export interface Casino {
     bankId: boolean
     license: boolean
   }
+  newCasino?: boolean
   faq?: FaqBox
   affiliateLink: string
   reviewLink: string
