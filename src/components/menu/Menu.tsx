@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { usePathname } from 'next/navigation'
 import styles from './menu.module.css';
 import Link from 'next/link';
@@ -7,6 +7,7 @@ import Link from 'next/link';
 function Menu() {
   const [isOpen, setIsOpen] = useState(false)
   const pathname = usePathname()
+  const menuRef = useRef<HTMLDivElement>(null)
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
@@ -16,8 +17,22 @@ function Menu() {
     setIsOpen(false)
   }, [pathname])
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsOpen(false)
+      }
+    }
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside)
+    }
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [isOpen])
+
   return (
-    <header className={styles.header}>
+    <header className={styles.header} ref={menuRef}>
       <div className={styles.menuIcon} onClick={toggleMenu}>
         {isOpen ? '✖' : '☰'}
       </div>
