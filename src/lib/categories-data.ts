@@ -7,6 +7,7 @@ const casinoMedFreeSpinsData = getCategoryData('/casino-med-free-spins/casino-me
 const casinoMedFreeSpinsUtanKravData = getCategoryData('/casino-med-free-spins-utan-krav/casino-med-free-spins-utan-krav.md');
 const allaCasinonData = getCategoryData('/alla-casinon/alla-casinon.md');
 const casinoMedSwishData = getCategoryData('/casino-med-swish/casino-med-swish.md')
+const nyaCasinonData = getCategoryData('/nya-casinon/nya-casinon.md')
 export {
     casinoMedBonusData,
     casinoMedBankidData,
@@ -14,5 +15,6 @@ export {
     allaCasinonData,
     casinoMedSwishData,
     casinoMedBonusUtanOmsattningskravData,
-    casinoMedFreeSpinsUtanKravData
+    casinoMedFreeSpinsUtanKravData,
+    nyaCasinonData
 };
