@@ -9,7 +9,6 @@ export function handleCloaking(request: NextRequest) {
   const parser = new UAParser(userAgent);
   const uaResult = parser.getResult();
   const isBot = uaResult.ua.toLowerCase().includes('bot') || uaResult.device.type === undefined;
-  const isMobile = uaResult.device.type === 'mobile';
 
   // Set cookies for downstream use
   const response = NextResponse.next();
@@ -19,9 +18,6 @@ export function handleCloaking(request: NextRequest) {
   // Cloaking logic: Rewrite for bots or mobile
   if (isBot) {
     return NextResponse.rewrite(new URL('/bot-optimized', request.url));
-  }
-  if (isMobile) {
-    return NextResponse.rewrite(new URL('/mobile', request.url));
   }
 
   return response;
